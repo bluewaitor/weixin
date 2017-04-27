@@ -8,8 +8,8 @@ app.get('/', function(req, res){
     var timestamp = req.query.timestamp;
     var nonce = req.query.nonce;
     var echostr = req.query.echostr;
-    var token = 'bluewaitor_wx';
-    var arr = [token, signature, timestamp];
+    var token = 'bluewaitorweixin';
+    var arr = [token, timestamp, nonce];
     arr.sort();
     var sha1 = crypto.createHash('sha1');
     var str = sha1.update(arr.join(""));
@@ -17,7 +17,7 @@ app.get('/', function(req, res){
     if(str === signature) {
         return res.status(200).send(echostr);
     } else {
-        return "";
+        return res.send("失败");
     }
 });
 
