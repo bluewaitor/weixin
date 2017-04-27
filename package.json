@@ -1,0 +1,14 @@
+{
+  "name": "weixin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bluewaitor/weixin.git",
+  "author": "bluewaitor <405622394@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
