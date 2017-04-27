@@ -12,9 +12,9 @@ app.get('/', function(req, res){
     var arr = [token, timestamp, nonce];
     arr.sort();
     var sha1 = crypto.createHash('sha1');
-    var str = sha1.update(arr.join(""));
+    sha1.update(arr.join(""));
 
-    if(str === signature) {
+    if(sha1.digest('hex') === signature) {
         return res.status(200).send(echostr);
     } else {
         return res.send("失败");
