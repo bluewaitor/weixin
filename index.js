@@ -3,12 +3,12 @@ var express = require('express');
 var app = express();
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
-var convert = require('xml-js');
 var xml2js = require('xml2js');
+var morgan = require('morgan');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
+app.use(morgan());
 app.get('/', function (req, res) {
     var signature = req.query.signature;
     var timestamp = req.query.timestamp;

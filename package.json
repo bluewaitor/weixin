@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "xml-js": "^1.2.2",
+    "morgan": "^1.8.1",
     "xml2js": "^0.4.17"
   }
 }
