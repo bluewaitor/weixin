@@ -9,6 +9,9 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
-    "express": "^4.15.2"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "xml-js": "^1.2.2",
+    "xml2js": "^0.4.17"
   }
 }
