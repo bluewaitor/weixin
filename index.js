@@ -59,7 +59,7 @@ app.post('/', function (req, res) {
                         <FromUserName><![CDATA[${ToUserName}]]></FromUserName>
                         <CreateTime>${Date.now()}</CreateTime>
                         <MsgType><![CDATA[text]]></MsgType>
-                        <Content><![CDATA[${Content}}]]></Content>
+                        <Content><![CDATA[${Content}]]></Content>
                     </xml>`;
             res.send(result);
         });
