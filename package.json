@@ -9,9 +9,12 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
+    "@bluewaitor/mongoose-plugin-timestamp": "^1.0.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "mongoose": "^4.10.5",
     "morgan": "^1.8.1",
+    "request": "^2.81.0",
     "xml2js": "^0.4.17"
   }
 }
