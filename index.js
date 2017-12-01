@@ -10,7 +10,7 @@ var timestampPlugin = require('@bluewaitor/mongoose-plugin-timestamp');
 mongoose.Promise = global.Promise;
 mongoose.plugin(timestampPlugin, {index: true});
 
-mongoose.connect('mongodb://star:Blue7700@127.0.0.1:27017/weixin?authSource=admin');
+mongoose.connect('mongodb://localhost:27017/weixin', { useMongoClient: true });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
